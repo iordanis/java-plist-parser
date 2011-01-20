@@ -33,26 +33,22 @@
     <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-          </execution>
-        </executions>
+      	<artifactId>maven-compiler-plugin</artifactId>
+      	<version>2.3.2</version>
+      	<configuration>
+      	  <source>2.3.2</source>
+          <target>2.3.2</target>
+      	</configuration>
       </plugin>
     </plugins>
   </build>
+  
+    <dependencies>
+    	<dependency>
+    		<groupId>xpp3</groupId>
+    		<artifactId>xpp3</artifactId>
+    		<version>1.1.4c</version>
+    	</dependency>
+    </dependencies>
   
 </project>
