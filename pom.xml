@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>java-plist-parser</groupId>
+  <artifactId>java-plist-parser</artifactId>
+  <version>0.1</version>
+  <name>java-plist-parser</name>
+  <description>A simple, general purpose Java PList parser</description>
+
+  <developers>
+    <developer>
+      <id>iordanis</id>
+      <name>Iordanis Giannakakis</name>
+      <email>i.giannakakis@ymail.com</email>
+      <timezone>0</timezone>
+    </developer>
+  </developers>
+  
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>http://github.com/iordanis/scribe-java/blob/master/LICENSE.txt</url>
+    </license>
+  </licenses>
+  
+  <scm>
+    <connection>scm:http://github.com/iordanis/java-plist-parser.git</connection>
+    <developerConnection>scm:http://github.com/iordanis/java-plist-parser.git</developerConnection>
+    <url>scm:http://github.com/iordanis/java-plist-parser.git</url>
+  </scm>
+  
+    <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>
